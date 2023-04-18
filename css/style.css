@@ -1,0 +1,1015 @@
+/* General Styling
+*/
+
+@keyframes title-fadein {
+	0%   {opacity: 0}
+	50%  {opacity: 0}
+	100% {opacity: 1}
+}
+
+h1 {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 20px;
+}
+
+h2 {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 20px;
+	color: #FFF;
+	font-weight: 300;
+}
+
+p {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 20px;
+	line-height: 16px;
+}
+
+body {
+	background-color: #000;
+}
+
+/* Header Styling
+*/
+
+header {
+	background-color: #000;
+	width: 100%;
+	height: 40px;
+}
+
+header img {
+	height: 30px;
+	padding: 5px 10px 5px 10px;
+	float: left;
+}
+
+header h1 {
+	color: #FFF;
+	font-kerning: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/* Navigation Styling
+*/
+
+nav {
+	background-color: #E5D1FE;
+	width: 100%;
+	height: 60px;
+}
+
+nav ul li {
+	display: inline-block;
+	float: right;
+	padding: 22px 20px 22px 20px;
+	font-family: Sukhumvit Set, san-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+	z-index: 1;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #552A89;
+}
+
+nav ul li a:hover {
+	color: #9C78B2;
+}
+
+/* Spotlight Styling
+*/
+
+#spotlight {
+	width: 100%;
+	height: 720px;
+	background-image: url("../images/spotlight-banner.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#spotlight h3 {
+	font-size: 12px;
+	padding-top: 678px;
+	padding-left: 24px;
+}
+
+#title {
+	width: 400px;
+	height: 720px;
+	background-color: rgba(0, 0, 0, 0.65);
+	float: right;
+	margin-right: 145px;
+	animation-timing-function: ease-in;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+#title img {
+	width: 96px;
+	height: 148px;
+	margin-top: 244px;
+	margin-left: 36px;
+	margin-right: 12px;
+	display: inline-block;
+}
+
+#title h2 {
+	display: inline-block;
+	float: right;
+	font-size: 50px;
+	margin-right: 36px;
+	margin-top: 252px;
+	line-height: 70px;
+}
+
+#title h1 {
+	display: inline-block;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin: 10px 64px;
+}
+
+/* Main Content Styling - Biography
+*/
+
+main {
+	width: auto;
+	margin: 0 auto;
+}
+
+#biography {
+	height: 372px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #E5D1FE;
+	border-radius: 12px;
+}
+
+#biography div {
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+
+#bio-block {
+	background-color: #552A89;
+	margin-left: 54px;
+	margin-right: 12px;
+	height: 372px;
+	width: 314px;
+	display: inline-block;
+}
+
+#bio-block h3 {
+	color: #E5D1FE;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 28px;
+	letter-spacing: 1px;
+}
+
+#bio-block #logo {
+	width: 132px;
+	height: 204px;
+	margin: 10px 88px;
+	display: inline;
+}
+
+.scroll {
+	margin: 0px 20px;
+	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
+}
+
+#profile {
+	height: 308px;
+	border-radius: 12px;
+	margin: 30px 28px 30px 28px;
+}
+
+#bio h2 {
+	margin-top: 28px;
+	color: #552A89;
+	font-size: 50px;
+	letter-spacing: 12px;
+	font-weight: 200;
+}
+
+#bio p {
+	width: 520px;
+	letter-spacing: 1px;
+	color: #552A89;
+	margin-top: 18px;
+	font-weight: 300;
+	line-height: 34px;
+}
+
+/* Main Content Styling - Page Highlights
+*/
+
+#highlight-container {
+	width: 1280px;
+	height: 410px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.highlight-block {
+	height: 410px;
+	width: 410px;
+	display: inline-block;
+	background-color: #552A89;
+	margin-bottom: 24px;
+	border-radius: 12px;
+	position: relative;
+	z-index: 1;
+	pointer-events: visible;
+}
+
+#one, #two {
+	margin-right: 20px;
+}
+
+.preview {
+	padding: 48px;
+	height: 314px;
+	opacity: 0.25;
+	position: relative;
+	z-index: -1;
+}
+
+#one h2 {
+	position: absolute;
+	background-color: #E5D1FE;
+	color: #552A89;
+	margin-top: 48px;
+	padding: 20px 149.25px;
+	font-size: 24px;
+}
+
+#two h2 {
+	position: absolute;
+	background-color: #E5D1FE;
+	color: #552A89;
+	margin-top: 48px;
+	padding: 20px 127.125px;
+	font-size: 24px;
+}
+
+#three h2 {
+	position: absolute;
+	background-color: #E5D1FE;
+	color: #552A89;
+	margin-top: 48px;
+	padding: 20px 142.625px;
+	font-size: 24px;
+}
+
+.highlight-block p {
+	color: #E5D1FE;
+	line-height: 35px;
+	letter-spacing: 1px;
+	position: absolute;
+    top: 150px;
+    padding: 0 60px;
+	text-align: center;
+}
+
+.highlight-block h1 {
+	color: #552A89;
+	letter-spacing: 1px;
+	position: absolute;
+	text-align: center;
+	background-color: #E5D1FE;
+	top: 275px;
+	right: 65px;
+    padding: 15px 25px;
+}
+
+.highlight-block a {
+	text-decoration: none;
+	color: #552A89!important;
+}
+
+.highlight-block a:hover {
+	color: #9C78B2!important;
+}
+
+.icons {
+	position: absolute;
+    top: 230px;
+    padding: 0 60px;
+	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
+}
+
+/* Main Content Styling - Process Highlight
+*/
+
+#process-div {
+	height: 120px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #552A89;
+	border-radius: 12px;
+}
+
+#process-div img {
+	padding: 16px 18px;
+	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
+	display: inline;
+	float: left;
+}
+
+#process-div p {
+	display: inline;
+	float: left;
+	font-size: 20px;
+	color: #E5D1FE;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 52px 240px;
+}
+
+#process-div a {
+	color: #E5D1FE;
+}
+
+#process-div a:hover {
+	color: #9C78B2;
+}
+
+/* Footer Content Styling
+*/
+
+.foot {
+	height: 72px;
+	background-color: #E5D1FE;
+}
+
+footer p {
+	font-size: 18px;
+	color: #552A89;
+	padding: 30px;
+	font-weight: lighter;
+}
+
+#social-link {
+	float: left;
+	display: inline;
+}
+
+#social-link a {
+	color: #552A89!important;
+}
+
+#social-link a:hover {
+	color: #9C78B2!important;
+}
+
+
+#footer-text {
+	float: right;
+	display: inline;
+}
+
+.extended-foot {
+	width: 100%;
+	height: 308px;
+	background-color: #E5D1FE;
+	border-bottom: 1px dotted #552A89;
+}
+
+.extended-foot p {
+	display: inline;
+	margin-top: 140px;
+	float: right;
+	text-transform: uppercase;
+	font-weight: 100;
+	line-height: 19px;
+	margin-right: 24px;
+}
+
+.extended-foot iframe {
+	display: inline;
+	float: left;
+	height: 252px; 
+	width: 975px;
+	margin-top: 28px;
+	margin-left: 67px;
+}
+
+/* Resume Page - Spotlight Styling
+*/
+
+#resume-spotlight {
+	width: 100%;
+	height: 720px;
+	background-image: url("../images/resume-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	animation-timing-function: ease-in;
+}
+
+#resume-spotlight img {
+	width: 60px;
+	display: inline;
+	float: right;
+	margin-top: 500px;
+	margin-right: 50px;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+#resume-spotlight h2 {
+	font-size: 70px;
+	letter-spacing: 5px;
+	float: right;
+	margin-top: 498px;
+	margin-right: 10px;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+#resume-spotlight h1 {
+	font-size: 20px;
+	color: #FFF;
+	display: inline;
+	letter-spacing: 2px;
+	margin-top: 600px;
+	margin-left: 1096px;
+	text-transform: uppercase;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+/* Resume Page - Body Styling
+
+#skills2-div {
+	width: 640px;
+	float: right;
+}
+
+*/
+
+#resume-information {
+	height: 1600px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #E5D1FE;
+	border-radius: 12px;
+}
+
+#resume-information h2 {
+	padding-top: 48px;
+	color: #552A89;
+	font-size: 50px;
+	letter-spacing: 12px;
+	font-weight: 200;
+}
+
+#resume-information p {
+	font-size: 18px;
+	line-height: 36px;
+	color: #552A89;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+
+#skills-div p {
+	font-size: 18px;
+}
+
+#skills-div {
+	width: 1032px;
+	margin: 0px auto;
+}
+
+#skills-list {
+	width: 1032px;
+	padding: 24px 0px 48px 0px;
+}
+
+table {
+	margin-top: 24px;
+	width: 1010px;
+}
+
+th, td {
+	border: 3px solid #552A89;
+}
+
+th {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 20px;
+	color: #552A89;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 300;
+	padding: 12px 0;
+}
+
+td {
+	font-family: Sukhumvit Set, san-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #552A89;
+	letter-spacing: 1px;
+	padding: 24px;
+}
+
+/* Contact Page - Form Styling
+*/
+
+#contact-spotlight {
+	width: 100%;
+	height: 720px;
+	background-image: url("../images/contact-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	animation-timing-function: ease-in;
+}
+
+#contact-form {
+	width: 454px;
+	height: 720px;
+	margin-left: 68px;
+}
+
+#contact-form h2 {
+	font-size: 50px;
+	letter-spacing: 5px;
+	padding-top: 100px;
+	padding-left: 30px;
+	padding-bottom: 24px;
+}
+
+#contact-form h3 {
+	font-size: 20px;
+	padding-left: 30px;
+	padding-bottom: 24px;
+}
+
+/* Portfolio Page - Spotlight Styling
+*/
+
+#video-banner {
+	position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+#video-banner video {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#video-banner .video-caption {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-name: title-fadein;
+    animation-duration: 3s;
+}
+#video-banner .video-caption h1 {
+	color: #fff;
+	font-family: Sukhumvit Set, sans-serif;
+	font-size: 75px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	padding: 24px 12px;
+	
+}
+
+.video-caption img {
+	width: 44px;
+	bottom: 200px;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+/* Portfolio Page - Content Styling
+*/
+
+#drawing {
+	height: 816px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #E5D1FE;
+	border-radius: 12px;
+}
+
+#drawing h3 {
+	color: #E5D1FE;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	background-color: #552A89;
+	position: relative;
+	top: 48px;
+}
+
+#drawing-one {
+	float: left;
+	margin: 72px 0 24px 24px;
+	height: 600px;
+	width: 434px;
+	display: inline;
+}
+
+#drawing-two {
+	float: left;
+	margin: 72px 24px 24px 24px;
+	height: 248px;
+	width: 774px;
+	display: inline-block;
+}
+
+#drawing-three {
+	float: left;
+	margin: 0px 24px 0px 24px;
+	height: 328px;
+	width: 242px;
+	display: inline-block;
+}
+
+#drawing-four {
+	float: left;
+	margin: 0px 24px 0px 0px;
+	height: 328px;
+	width: 242px;
+	display: inline-block;
+}
+
+#drawing-five {
+	float: left;
+	margin: 0px 24px 0px 0px;
+	height: 328px;
+	width: 242px;
+	display: inline-block;
+}
+
+#painting {
+	height: 816px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #552A89;
+	border-radius: 12px;
+}
+
+#painting h3 {
+	color: #552A89;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	background-color: #E5D1FE;
+	position: relative;
+	top: 48px;
+}
+
+#painting-one {
+	float: left;
+	margin: 72px 0px 24px 24px;
+	height: 288px;
+	width: 242px;
+	display: inline-block;
+	background-color: #E5D1FE;
+}
+
+#painting-two {
+	float: left;
+	margin: 72px 0px 24px 24px;
+	height: 288px;
+	width: 484px;
+	display: inline-block;
+	background-color: #E5D1FE;
+}
+
+#painting-three {
+	float: right;
+	margin: 72px 24px 24px 0;
+	height: 600px;
+	width: 458px;
+	display: inline;
+	background-color: #E5D1FE;
+}
+
+#painting-four {
+	float: left;
+	margin: 0px 0px 24px 24px;
+	height: 288px;
+	width: 484px;
+	display: inline-block;
+	background-color: #E5D1FE;
+}
+
+#painting-five {
+	float: left;
+	margin: 0px 0px 24px 24px;
+	height: 288px;
+	width: 242px;
+	display: inline-block;
+	background-color: #E5D1FE;
+}
+
+#digital {
+	height: 816px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #E5D1FE;
+	border-radius: 12px;
+}
+
+#digital h3 {
+	color: #E5D1FE;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	background-color: #552A89;
+	position: relative;
+	top: 48px;
+}
+
+#digital-one {
+	float: left;
+	margin: 72px 0 24px 24px;
+	height: 260px;
+	width: 604px;
+	display: inline;
+}
+
+#digital-two {
+	float: left;
+	margin: 72px 24px 24px 24px;
+	height: 260px;
+	width: 604px;
+	display: inline-block;
+}
+
+#digital-three {
+	float: left;
+	margin: 0px 24px 0px 24px;
+	height: 316px;
+	width: 290px;
+	display: inline-block;
+}
+
+#digital-four {
+	float: left;
+	margin: 0px 24px 0px 0px;
+	height: 316px;
+	width: 290px;
+	display: inline-block;
+}
+
+#digital-five {
+	float: left;
+	margin: 0px 24px 0px 0px;
+	height: 316px;
+	width: 290px;
+	display: inline-block;
+}
+
+#digital-six {
+	float: left;
+	margin: 0px 24px 0px 0px;
+	height: 316px;
+	width: 290px;
+	display: inline-block;
+}
+
+
+#animation {
+	height: 600px;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #552A89;
+	border-radius: 12px;
+}
+
+#animation h3 {
+	color: #552A89;
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	background-color: #E5D1FE;
+	position: relative;
+	top: 48px;
+}
+
+#animation p {
+	color: #E5D1FE;
+}
+
+#clip-one {
+	float: left;
+	margin: 72px 0px 24px 24px;
+	height: 339.75px;
+	width: 604px;
+	display: inline-block;
+}
+
+#clip-two {
+	float: left;
+	margin: 72px 0px 24px 24px;
+	height: 339.75px;
+	width: 604px;
+	display: inline-block;
+}
+
+#portfolio-main img {
+	height: 100%;
+}
+
+.clip-banner {
+	position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.clip-banner video {
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#portfolio-main img:hover {
+	opacity: 0.5;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	font-family: Sukhumvit Set, sans-serif;
+	font-size: 12px;
+    visibility: hidden;
+    width: 200px;
+    background-color: #FFF;
+    color: #552A89;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 12px;
+
+    position: absolute;
+    z-index: 1;
+	bottom: 100%;
+	left: 0%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Process Page - Spotlight Styling
+*/
+
+#process-spotlight {
+	width: 100%;
+	height: 720px;
+	background-image: url("../images/process-banner.jpg");
+	background-size: cover;
+	background-position: center;
+	animation-timing-function: ease-in;
+}
+
+#process-spotlight img {
+	width: 60px;
+	display: inline;
+	float: right;
+	margin-top: 50px;
+	margin-right: 50px;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+#process-spotlight h2 {
+	font-size: 70px;
+	letter-spacing: 5px;
+	float: right;
+	margin-top: 48px;
+	margin-right: 10px;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+#process-spotlight h1 {
+	font-size: 20px;
+	color: #FFF;
+	display: inline;
+	letter-spacing: 2px;
+	margin-top: 60px;
+	margin-left: 1096px;
+	text-transform: uppercase;
+	animation-name: title-fadein;
+    animation-duration: 2s;
+}
+
+/* Process Page - Content Styling
+*/
+
+#process-information {
+	height: auto;
+	width: 1280px;
+	margin: 24px auto;
+	background-color: #E5D1FE;
+	border-radius: 12px;
+}
+
+#process-information h2 {
+	padding: 80px 0px 24px 144px;
+	color: #552A89;
+	font-size: 50px;
+	letter-spacing: 12px;
+	font-weight: 200;
+}
+
+#process-information p {
+	font-size: 18px;
+	line-height: 36px;
+	color: #552A89;
+	letter-spacing: 1px;
+	font-weight: 300;
+	padding: 24px 144px 0px 144px;
+	text-indent: 48px;
+}
+
+#process-information img {
+	padding-top: 24px;
+}
+
+#process-information a {
+	color: #552A89!important;
+}
+
+#process-information p a:hover {
+	color: #9C78B2!important;
+}
+
+.closing {
+	font-size: 18px;
+	line-height: 36px;
+	color: #552A89;
+	letter-spacing: 1px;
+	font-weight: 300;
+	padding: 24px 144px 0px 144px;
+}
