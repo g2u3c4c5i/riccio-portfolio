@@ -8,12 +8,12 @@
 }
 
 h1 {
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
 	font-size: 20px;
 }
 
 h2 {
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
 	font-size: 20px;
 	color: #FFF;
 	text-transform: uppercase;
@@ -22,14 +22,14 @@ h2 {
 }
 
 h3 {
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 300;
 }
 
 p {
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
 	font-size: 20px;
 	line-height: 16px;
 }
@@ -43,7 +43,7 @@ body {
 
 header {
 	background-color: #000;
-	width: 100%;
+	width: auto;
 	height: 40px;
 }
 
@@ -67,7 +67,7 @@ header h1 {
 
 nav {
 	background-color: #E5D1FE;
-	width: 100%;
+	width: auto;
 	height: 60px;
 }
 
@@ -75,7 +75,7 @@ nav ul li {
 	display: inline-block;
 	float: right;
 	padding: 22px 20px 22px 20px;
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -95,7 +95,7 @@ nav ul li a:hover {
 */
 
 #spotlight {
-	width: 100%;
+	width: auto;
 	height: 720px;
 	background-image: url("../images/spotlight-banner.jpg");
 	background-size: cover;
