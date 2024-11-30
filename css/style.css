@@ -66,7 +66,7 @@ header h1 {
 */
 
 nav {
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 	width: auto;
 	height: 60px;
 }
@@ -80,15 +80,16 @@ nav ul li {
 	font-weight: 500;
 	letter-spacing: 2px;
 	z-index: 1;
+	font-size: 2.2vmin;
 }
 
 nav ul li a {
 	text-decoration: none;
-	color: #552A89;
+	color: #223054;
 }
 
 nav ul li a:hover {
-	color: #9C78B2;
+	color: #3874A5;
 }
 
 /* Spotlight Styling
@@ -155,41 +156,31 @@ main {
 }
 
 #biography {
-	height: 372px;
-	width: 1280px;
+	min-height: 372px;
+	width: 90%;
 	margin: 24px auto;
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 	border-radius: 12px;
+	
+	display: flex;
+    justify-content: center; /* Horizontally center the flex container */
+    align-items: center;     /* Vertically center the flex container (optional, if you want equal space above and below) */
+    gap: 20px;               /* Optional: space between the two divs */
+
+	
+}
+
+#clipart {
+	display: flex;
+    justify-content: center;
 }
 
 #biography div {
 	display: inline-block;
 	position: relative;
 	float: left;
-}
-
-#bio-block {
-	background-color: #552A89;
-	margin-left: 54px;
-	margin-right: 12px;
-	height: 372px;
-	width: 314px;
-	display: inline-block;
-}
-
-#bio-block h3 {
-	color: #E5D1FE;
-	font-weight: 600;
-	font-size: 20px;
-	padding: 28px;
-	letter-spacing: 1px;
-}
-
-#bio-block #logo {
-	width: 132px;
-	height: 204px;
-	margin: 10px 88px;
-	display: inline;
+	align-items: center;
+	    padding: 20px;           /* Optional: padding around the container */
 }
 
 .scroll {
@@ -197,55 +188,96 @@ main {
 	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
 }
 
-#profile {
-	height: 308px;
-	border-radius: 12px;
-	margin: 30px 28px 30px 28px;
+
+#profile { /* Currently profile image, needs changing*/
+	height: 350px;
 }
 
 #bio h2 {
-	margin-top: 28px;
-	color: #552A89;
+	margin: 18px;
+	color: #223054;
 	font-size: 50px;
 	letter-spacing: 12px;
 	font-weight: 200;
 }
 
 #bio p {
-	width: 520px;
+	max-width: 740px;
 	letter-spacing: 1px;
-	color: #552A89;
-	margin-top: 18px;
+	color: #223054;
+	margin: 18px;
 	font-weight: 300;
 	line-height: 34px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #biography {
+        flex-direction: column; /* Stack the items vertically on small screens */
+        align-items: center;     /* Center both divs horizontally */
+        gap: 0px;               /* Optional: space between the two divs */
+    }
+
+    #profile {
+        height: 300px;  /* Adjust image size */
+    }
+
+    #bio {
+        text-align: center; /* Optional: center the text on small screens */
+    }
 }
 
 /* Main Content Styling - Page Highlights
 */
 
 #highlight-container {
-	width: 1280px;
-	height: 410px;
+	width: 90%;
 	margin: 0 auto;
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	
+	display: flex;             /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute space between blocks */
+    align-items: stretch;      /* Ensure blocks stretch to fill the container's height */
+    flex-wrap: wrap;           /* Allow wrapping on smaller screens */
+	gap: 24px;
 }
 
 .highlight-block {
 	height: 410px;
-	width: 410px;
 	display: inline-block;
-	background-color: #552A89;
+	background-color: #223054;
 	margin-bottom: 24px;
 	border-radius: 12px;
 	position: relative;
 	z-index: 1;
 	pointer-events: visible;
+	
+	flex: 1;                    /* Make all blocks take equal width */
+    min-width: 410px;           /* Set a minimum width for the blocks */
+    text-align: center;         /* Center text inside each block */
+    box-sizing: border-box;     /* Ensure padding is included in the width calculation */
+	
 }
 
-#one, #two {
-	margin-right: 20px;
+div#textbox1, div#textbox2, div#textbox3 {
+	height: 250px;
+	margin: 0 48px 0 48px;
+	width: auto;
+	background-size: cover;
+}
+
+div#textbox1 {
+	background-image: url("../images/resume-preview.png");
+}
+
+div#textbox2 {
+	background-image: url("../images/portfolio-preview.png");
+}
+
+div#textbox3 {
+	background-image: url("../images/contact-preview.png");
 }
 
 .preview {
@@ -256,49 +288,28 @@ main {
 	z-index: -1;
 }
 
-#one h2 {
-	position: absolute;
-	background-color: #E5D1FE;
-	color: #552A89;
+#one h2, #two h2, #three h2 {
+	background-color: #D2F1FF;
+	color: #223054;
 	margin-top: 48px;
 	padding: 20px 149.25px;
 	font-size: 24px;
 }
 
-#two h2 {
-	position: absolute;
-	background-color: #E5D1FE;
-	color: #552A89;
-	margin-top: 48px;
-	padding: 20px 127.125px;
-	font-size: 24px;
-}
-
-#three h2 {
-	position: absolute;
-	background-color: #E5D1FE;
-	color: #552A89;
-	margin-top: 48px;
-	padding: 20px 142.625px;
-	font-size: 24px;
-}
-
 .highlight-block p {
-	color: #E5D1FE;
+	color: #D2F1FF;
 	line-height: 35px;
 	letter-spacing: 1px;
-	position: absolute;
-    top: 150px;
-    padding: 0 60px;
+	padding: 33px 22px;
 	text-align: center;
 }
 
 .highlight-block h1 {
-	color: #552A89;
+	color: #223054;
 	letter-spacing: 1px;
 	position: absolute;
 	text-align: center;
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 	top: 275px;
 	right: 65px;
     padding: 15px 25px;
@@ -306,54 +317,18 @@ main {
 
 .highlight-block a {
 	text-decoration: none;
-	color: #552A89!important;
+	color: #223054!important;
 }
 
 .highlight-block a:hover {
-	color: #9C78B2!important;
+	color: #3874A5!important;
 }
 
 .icons {
 	position: absolute;
     top: 230px;
     padding: 0 60px;
-	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
-}
-
-/* Main Content Styling - Process Highlight
-*/
-
-#process-div {
-	height: 120px;
-	width: 1280px;
-	margin: 24px auto;
-	background-color: #552A89;
-	border-radius: 12px;
-}
-
-#process-div img {
-	padding: 16px 18px;
-	filter: invert(99%) sepia(61%) saturate(7488%) hue-rotate(183deg) brightness(96%) contrast(109%);
-	display: inline;
-	float: left;
-}
-
-#process-div p {
-	display: inline;
-	float: left;
-	font-size: 20px;
-	color: #E5D1FE;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 52px 240px;
-}
-
-#process-div a {
-	color: #E5D1FE;
-}
-
-#process-div a:hover {
-	color: #9C78B2;
+	filter: invert(100%) sepia(40%) saturate(5284%) hue-rotate(175deg) brightness(106%) contrast(101%);
 }
 
 /* Footer Content Styling
@@ -361,12 +336,12 @@ main {
 
 .foot {
 	height: 72px;
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 }
 
 footer p {
-	font-size: 18px;
-	color: #552A89;
+	font-size: 2.2vmin;
+	color: #223054;
 	padding: 30px;
 	font-weight: lighter;
 }
@@ -377,11 +352,11 @@ footer p {
 }
 
 #social-link a {
-	color: #552A89!important;
+	color: #223054!important;
 }
 
 #social-link a:hover {
-	color: #9C78B2!important;
+	color: #3874A5!important;
 }
 
 
@@ -393,8 +368,8 @@ footer p {
 .extended-foot {
 	width: 100%;
 	height: 308px;
-	background-color: #E5D1FE;
-	border-bottom: 1px dotted #552A89;
+	background-color: #D2F1FF;
+	border-bottom: 1px dotted #223054;
 }
 
 .extended-foot p {
@@ -419,6 +394,11 @@ footer p {
 /* Resume Page - Spotlight Styling
 */
 
+#resume-spotlight h2, #resume-spotlight h1 {
+  margin: 0;
+  padding: 0;
+}
+
 #resume-spotlight {
 	width: 100%;
 	height: 720px;
@@ -426,38 +406,51 @@ footer p {
 	background-size: cover;
 	background-position: center;
 	animation-timing-function: ease-in;
+	
+	position: relative; /* This allows absolute positioning of child elements */
+	display: flex;
+	flex-direction: column; /* Stack the h2 and h1 vertically */
+	justify-content: flex-end; /* Align children to the bottom */
+	align-items: flex-end; /* Align children to the right */
 }
 
+#resume-spotlight-text {
+	padding: 20px;
+	margin: 20px;
+	
+}
+
+
 #resume-spotlight img {
-	width: 60px;
-	display: inline;
-	float: right;
-	margin-top: 500px;
-	margin-right: 50px;
+	width: 100px;
 	animation-name: title-fadein;
     animation-duration: 2s;
+	
+	margin-left: 10px; /* Space between image and h2 */
+  	align-self: center; /* Align the image within its flex container */
+	float: right;
 }
 
 #resume-spotlight h2 {
 	font-size: 70px;
 	letter-spacing: 5px;
-	float: right;
-	margin-top: 498px;
-	margin-right: 10px;
 	animation-name: title-fadein;
     animation-duration: 2s;
+	
+	display: inline-flex;
+  	align-items: center; /* Vertically center the image with h2 text */
 }
 
 #resume-spotlight h1 {
 	font-size: 20px;
 	color: #FFF;
-	display: inline;
 	letter-spacing: 2px;
-	margin-top: 600px;
-	margin-left: 1096px;
 	text-transform: uppercase;
 	animation-name: title-fadein;
     animation-duration: 2s;
+	
+	margin-top: 5px; /* Space between h2 and h1 */
+	margin-left: 52px;
 }
 
 /* Resume Page - Body Styling
@@ -470,16 +463,16 @@ footer p {
 */
 
 #resume-information {
-	height: 1600px;
-	width: 1280px;
+	height: auto;
+	width: 90%;
 	margin: 24px auto;
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 	border-radius: 12px;
 }
 
 #resume-information h2 {
 	padding-top: 48px;
-	color: #552A89;
+	color: #223054;
 	font-size: 50px;
 	letter-spacing: 12px;
 	font-weight: 200;
@@ -488,53 +481,101 @@ footer p {
 #resume-information p {
 	font-size: 18px;
 	line-height: 36px;
-	color: #552A89;
+	color: #223054;
 	letter-spacing: 1px;
 	font-weight: 300;
 }
 
 
 #skills-div p {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 #skills-div {
-	width: 1032px;
-	margin: 0px auto;
+	width: auto;
+	margin: 0px 10%;
 }
 
 #skills-list {
-	width: 1032px;
+	width: auto;
 	padding: 24px 0px 48px 0px;
 }
 
 table {
 	margin-top: 24px;
-	width: 1010px;
+	border-collapse: collapse;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
 }
 
 th, td {
-	border: 3px solid #552A89;
+	border: 3px solid #223054;
+	font-family: Sukhumvit Set, san-serif;
+	color: #223054;
 }
 
 th {
-	font-family: Sukhumvit Set, san-serif;
-	font-size: 20px;
-	color: #552A89;
+	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-weight: 300;
-	padding: 12px 0;
+	padding: 12px;
 }
 
 td {
-	font-family: Sukhumvit Set, san-serif;
 	font-size: 14px;
 	line-height: 24px;
-	color: #552A89;
 	letter-spacing: 1px;
 	padding: 24px;
 }
+
+ @media screen and (max-width: 600px) {
+            table {
+                display: block;
+                width: 100%;
+				padding: 20px;
+				margin-top: 0px;
+            }
+
+            th {
+                display: none; /* Hide the table header */
+				border: none; /* Remove row borders */
+            }
+
+            tr {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            td {
+                display: block;
+                text-align: left;
+                position: relative;
+				border: 1px solid #223054;
+            }
+
+            td:first-child {
+                font-weight: bold;
+				background-color: #223054;
+				color: #D2F1FF;
+            }
+	 
+	 	 	td:last-child {
+				margin-bottom: 40px;
+            }
+	 
+			 #resume-information h2 {
+				 padding-top: 30px;
+
+
+			 }
+	 		#resume-spotlight-text {
+				background-color: rgba(18,27,48,0.85);
+				border-radius: 10px;
+
+			}
+        }
 
 /* Contact Page - Form Styling
 */
@@ -568,6 +609,36 @@ td {
 	padding-bottom: 24px;
 }
 
+#contact-div {
+	height: auto;
+	width: 90%;
+	margin: 24px auto;
+	background-color: #D2F1FF;
+	border-radius: 12px;
+	padding-top: 48px;
+}
+
+#contact-div h3 {
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	
+	color: #D2F1FF;
+	background-color: #223054;
+}
+
+#contact-div p {
+	color: #223054;
+	padding: 48px;
+	line-height: 30px;
+	text-align: center;
+}
+
+
 /* Portfolio Page - Spotlight Styling
 */
 
@@ -582,53 +653,107 @@ td {
 	height: auto;
 	vertical-align: middle;
 	width: 100%;
+	object-fit: cover;
 }
 
 #video-banner .video-caption {
-    position: absolute;
-    bottom: 200px;
-    left: 0;
-    z-index: 1;
-    background: rgba(0,0,0,0.8);
-    color: #fff;
-    width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	animation-name: title-fadein;
     animation-duration: 3s;
+	font-weight: 600;
+	position: absolute;
+    top: 10%;
+    right: 3%;
+    display: flex; /* Use flexbox to align the logo and text */
+    align-items: center; /* Vertically center the items */
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif;
+    z-index: 10;
+	border-radius: 20px;
 }
 #video-banner .video-caption h1 {
 	color: #fff;
 	font-family: Sukhumvit Set, sans-serif;
-	font-size: 75px;
+	font-size: 48px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 8px;
 	padding: 24px 12px;
+	margin: 0; /* Remove margin from the heading */
 	
 }
 
 .video-caption img {
-	width: 44px;
+	width: 60px;
 	bottom: 200px;
 	animation-name: title-fadein;
     animation-duration: 2s;
+    margin: 10px; /* Add spacing between the logo and the text */
+}
+
+@media (max-width: 768px) {
+    .video-caption h1 {
+        font-size: 18px !important; /* Font size for screens smaller than 768px */
+    }
+	
+	.video-caption img {
+	width: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+    .video-caption h1 {
+        font-size: 16px !important; /* Font size for screens smaller than 576px */
+    }
+	.video-caption img {
+	width: 20px;
+	}
 }
 
 /* Portfolio Page - Content Styling
 */
 
 #drawing {
-	height: 816px;
-	width: 1280px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#drawing h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Minimum width of 250px per image */
+    gap: 15px; /* Spacing between images */
+    justify-items: center; /* Center images in each grid cell */
+	padding: 20px;
+}
+
+.gallery-container img {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: auto; /* Maintain the aspect ratio of the images */
+    object-fit: contain; /* Prevent cropping by ensuring the entire image fits within the container */
+    max-height: 400px; /* Optional: Set a maximum height to avoid extremely large images */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a nice effect */
+    transition: transform 0.3s ease; /* Optional: Add a zoom effect on hover */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Optional: Slight zoom effect on hover */
+}
+
+#drawing {
+	height: auto;
+	width: 90%;
 	margin: 24px auto;
-	background-color: #E5D1FE;
+	background-color: #D2F1FF;
 	border-radius: 12px;
+	padding-top: 48px;
 }
 
 #drawing h3 {
-	color: #E5D1FE;
 	font-weight: 400;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -636,199 +761,23 @@ td {
 	text-align: center;
 	padding: 40px 0px;
 	letter-spacing: 4px;
-	background-color: #552A89;
-	position: relative;
-	top: 48px;
-}
-
-#drawing-one {
-	float: left;
-	margin: 72px 0 24px 24px;
-	height: 600px;
-	width: 434px;
-	display: inline;
-}
-
-#drawing-two {
-	float: left;
-	margin: 72px 24px 24px 24px;
-	height: 248px;
-	width: 774px;
-	display: inline-block;
-}
-
-#drawing-three {
-	float: left;
-	margin: 0px 24px 0px 24px;
-	height: 328px;
-	width: 242px;
-	display: inline-block;
-}
-
-#drawing-four {
-	float: left;
-	margin: 0px 24px 0px 0px;
-	height: 328px;
-	width: 242px;
-	display: inline-block;
-}
-
-#drawing-five {
-	float: left;
-	margin: 0px 24px 0px 0px;
-	height: 328px;
-	width: 242px;
-	display: inline-block;
-}
-
-#painting {
-	height: 816px;
-	width: 1280px;
-	margin: 24px auto;
-	background-color: #552A89;
-	border-radius: 12px;
-}
-
-#painting h3 {
-	color: #552A89;
-	font-weight: 400;
-	font-size: 40px;
-	text-transform: uppercase;
-	width: 100%;
-	text-align: center;
-	padding: 40px 0px;
-	letter-spacing: 4px;
-	background-color: #E5D1FE;
-	position: relative;
-	top: 48px;
-}
-
-#painting-one {
-	float: left;
-	margin: 72px 0px 24px 24px;
-	height: 288px;
-	width: 242px;
-	display: inline-block;
-	background-color: #E5D1FE;
-}
-
-#painting-two {
-	float: left;
-	margin: 72px 0px 24px 24px;
-	height: 288px;
-	width: 484px;
-	display: inline-block;
-	background-color: #E5D1FE;
-}
-
-#painting-three {
-	float: right;
-	margin: 72px 24px 24px 0;
-	height: 600px;
-	width: 458px;
-	display: inline;
-	background-color: #E5D1FE;
-}
-
-#painting-four {
-	float: left;
-	margin: 0px 0px 24px 24px;
-	height: 288px;
-	width: 484px;
-	display: inline-block;
-	background-color: #E5D1FE;
-}
-
-#painting-five {
-	float: left;
-	margin: 0px 0px 24px 24px;
-	height: 288px;
-	width: 242px;
-	display: inline-block;
-	background-color: #E5D1FE;
-}
-
-#digital {
-	height: 816px;
-	width: 1280px;
-	margin: 24px auto;
-	background-color: #E5D1FE;
-	border-radius: 12px;
-}
-
-#digital h3 {
-	color: #E5D1FE;
-	font-weight: 400;
-	font-size: 40px;
-	text-transform: uppercase;
-	width: 100%;
-	text-align: center;
-	padding: 40px 0px;
-	letter-spacing: 4px;
-	background-color: #552A89;
-	position: relative;
-	top: 48px;
-}
-
-#digital-one {
-	float: left;
-	margin: 72px 0 24px 24px;
-	height: 260px;
-	width: 604px;
-	display: inline;
-}
-
-#digital-two {
-	float: left;
-	margin: 72px 24px 24px 24px;
-	height: 260px;
-	width: 604px;
-	display: inline-block;
-}
-
-#digital-three {
-	float: left;
-	margin: 0px 24px 0px 24px;
-	height: 316px;
-	width: 290px;
-	display: inline-block;
-}
-
-#digital-four {
-	float: left;
-	margin: 0px 24px 0px 0px;
-	height: 316px;
-	width: 290px;
-	display: inline-block;
-}
-
-#digital-five {
-	float: left;
-	margin: 0px 24px 0px 0px;
-	height: 316px;
-	width: 290px;
-	display: inline-block;
-}
-
-#digital-six {
-	float: left;
-	margin: 0px 24px 0px 0px;
-	height: 316px;
-	width: 290px;
-	display: inline-block;
+	
+	color: #D2F1FF;
+	background-color: #223054;
 }
 
 
 #animation {
-	height: 600px;
-	width: 1280px;
+	height: auto;
+	width: 90%;
 	margin: 24px auto;
-	background-color: #552A89;
+	background-color: #223054;
 	border-radius: 12px;
+	padding: 48px 0;
+	text-align: center; /* Centers text and inline elements like <p> */
 }
 
 #animation h3 {
-	color: #552A89;
 	font-weight: 400;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -836,47 +785,45 @@ td {
 	text-align: center;
 	padding: 40px 0px;
 	letter-spacing: 4px;
-	background-color: #E5D1FE;
-	position: relative;
-	top: 48px;
+	background-color: #D2F1FF;
+	color: #223054;
 }
 
 #animation p {
-	color: #E5D1FE;
+	color: #D2F1FF;
+	padding: 24px;
+	line-height: 30px;
 }
 
-#clip-one {
-	float: left;
-	margin: 72px 0px 24px 24px;
-	height: 339.75px;
-	width: 604px;
+#clip-one, #clip-two, #clip-three, #clip-four {
+	max-height: 339.75px;
+	max-width: 604px;
 	display: inline-block;
-}
-
-#clip-two {
-	float: left;
-	margin: 72px 0px 24px 24px;
-	height: 339.75px;
-	width: 604px;
-	display: inline-block;
+	margin: 12px;
 }
 
 #portfolio-main img {
 	height: 100%;
 }
 
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the grid on the screen */
+  gap: 20px; /* Adds space between the video sections */
+}
+
 .clip-banner {
-	position: relative;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+  flex: 0 1 calc(50% - 20px); /* Each video takes 50% of the width minus the gap */
+  box-sizing: border-box; /* Includes padding and border in the element's width/height */
 }
+
 .clip-banner video {
-	height: auto;
-	vertical-align: middle;
-	width: 100%;
+  width: 100%; /* Ensures the video scales within its container */
+  height: auto; /* Maintains the aspect ratio of the video */
+  border-radius: 8px; /* Optional: Rounds the video corners */
 }
+
 
 #portfolio-main img:hover {
 	opacity: 0.5;
@@ -893,7 +840,7 @@ td {
     visibility: hidden;
     width: 200px;
     background-color: #FFF;
-    color: #552A89;
+    color: #223054;
     text-align: center;
     border-radius: 6px;
     padding: 20px;
@@ -918,98 +865,4 @@ td {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-}
-
-/* Process Page - Spotlight Styling
-*/
-
-#process-spotlight {
-	width: 100%;
-	height: 720px;
-	background-image: url("../images/process-banner.jpg");
-	background-size: cover;
-	background-position: center;
-	animation-timing-function: ease-in;
-}
-
-#process-spotlight img {
-	width: 60px;
-	display: inline;
-	float: right;
-	margin-top: 50px;
-	margin-right: 50px;
-	animation-name: title-fadein;
-    animation-duration: 2s;
-}
-
-#process-spotlight h2 {
-	font-size: 70px;
-	letter-spacing: 5px;
-	float: right;
-	margin-top: 48px;
-	margin-right: 10px;
-	animation-name: title-fadein;
-    animation-duration: 2s;
-}
-
-#process-spotlight h1 {
-	font-size: 20px;
-	color: #FFF;
-	display: inline;
-	letter-spacing: 2px;
-	margin-top: 60px;
-	margin-left: 1096px;
-	text-transform: uppercase;
-	animation-name: title-fadein;
-    animation-duration: 2s;
-}
-
-/* Process Page - Content Styling
-*/
-
-#process-information {
-	height: auto;
-	width: 1280px;
-	margin: 24px auto;
-	background-color: #E5D1FE;
-	border-radius: 12px;
-}
-
-#process-information h2 {
-	padding: 80px 0px 24px 144px;
-	color: #552A89;
-	font-size: 50px;
-	letter-spacing: 12px;
-	font-weight: 200;
-}
-
-#process-information p {
-	font-size: 18px;
-	line-height: 36px;
-	color: #552A89;
-	letter-spacing: 1px;
-	font-weight: 300;
-	padding: 24px 144px 0px 144px;
-	text-indent: 48px;
-}
-
-#process-information img {
-	padding-top: 24px;
-}
-
-#process-information a {
-	color: #552A89!important;
-}
-
-#process-information p a:hover {
-	color: #9C78B2!important;
-}
-
-.closing {
-	font-size: 18px;
-	line-height: 36px;
-	color: #552A89;
-	letter-spacing: 1px;
-	font-weight: 300;
-	padding: 24px 144px 0px 144px;
 }
