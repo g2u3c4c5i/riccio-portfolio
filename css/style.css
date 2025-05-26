@@ -703,6 +703,39 @@ td {
     }
 }
 
+/* Thank You Page - Content Styling
+*/
+
+#thank-you-div {
+	height: auto;
+	min-height: 480px;
+	width: 90%;
+	margin: 24px auto;
+	background-color: #D2F1FF;
+	border-radius: 12px;
+	padding-top: 48px;
+}
+
+#thank-you-div h3 {
+	font-weight: 400;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0px;
+	letter-spacing: 4px;
+	
+	color: #D2F1FF;
+	background-color: #223054;
+}
+
+#thank-you-div p {
+	color: #223054;
+	padding: 48px 24px;
+	line-height: 30px;
+	text-align: center;
+}
+
 
 
 /* Portfolio Page - Spotlight Styling
