@@ -80,7 +80,7 @@ nav ul li {
 	font-weight: 500;
 	letter-spacing: 2px;
 	z-index: 1;
-	font-size: 2.2vmin;
+	font-size: 2.9vmin;
 }
 
 nav ul li a {
@@ -266,20 +266,36 @@ main {
 }
 
 .highlight-block {
-	height: 410px;
-	display: inline-block;
-	background-color: #223054;
-	margin-bottom: 24px;
-	border-radius: 12px;
-	position: relative;
-	z-index: 1;
-	pointer-events: visible;
+    height: 410px;
+    display: inline-block;
+    background-color: #223054;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    pointer-events: visible;
+
+    flex: 1 1 300px; /* Flex-grow, shrink, basis */
+    text-align: center;
+    box-sizing: border-box;
+
+    max-width: 100%;     /* Prevent overflow on mobile */
+    min-width: 280px;    /* Allow shrinking but not too small */
+}
+
+@media screen and (max-width: 600px) {
+    .highlight-block {
+        flex: 1 1 100%;   /* Stack blocks vertically */
+        min-width: unset;
+    }
+
+    #highlight-container {
+        gap: 16px;
+    }
 	
-	flex: 1;                    /* Make all blocks take equal width */
-    min-width: 410px;           /* Set a minimum width for the blocks */
-    text-align: center;         /* Center text inside each block */
-    box-sizing: border-box;     /* Ensure padding is included in the width calculation */
-	
+	.highlight-block p {
+		font-size: 18px;
+	}
 }
 
 div#textbox1, div#textbox2, div#textbox3 {
@@ -313,7 +329,7 @@ div#textbox3 {
 	background-color: #D2F1FF;
 	color: #223054;
 	margin-top: 48px;
-	padding: 20px 149.25px;
+	padding: 20px 0;
 	font-size: 24px;
 }
 
@@ -361,7 +377,7 @@ div#textbox3 {
 }
 
 footer p {
-	font-size: 2.2vmin;
+	font-size: 2.9vmin;
 	color: #223054;
 	padding: 30px;
 	font-weight: lighter;
