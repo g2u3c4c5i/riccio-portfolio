@@ -255,8 +255,8 @@ main {
 		font-size: 40px;
 	}
 	
-	nav ul li a {
-		font-size: 2.7vmin;
+	nav ul li {
+		font-size: 2.5vmin;
 	}
 }
 
