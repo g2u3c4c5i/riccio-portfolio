@@ -80,7 +80,7 @@ nav ul li {
 	font-weight: 500;
 	letter-spacing: 2px;
 	z-index: 1;
-	font-size: 2.9vmin;
+	font-size: 2.3vmin;
 }
 
 nav ul li a {
@@ -246,6 +246,10 @@ main {
     #bio {
         text-align: center; /* Optional: center the text on small screens */
     }
+	
+	nav ul li a {
+		font-size: 2.7vmin;
+	}
 }
 
 /* Main Content Styling - Page Highlights
@@ -377,7 +381,7 @@ div#textbox3 {
 }
 
 footer p {
-	font-size: 2.9vmin;
+	font-size: 2.3vmin;
 	color: #223054;
 	padding: 30px;
 	font-weight: lighter;
@@ -608,8 +612,13 @@ td {
 
 			 }
 	 		#resume-spotlight-text {
-				background-color: rgba(0,0,0,0.4);
+				background-color: rgba(11,32,61,0.6);
 				border-radius: 10px;
+
+			}
+	 
+	 		#resume-spotlight-text img {
+				display: none;
 
 			}
         }
@@ -627,8 +636,6 @@ td {
 }
 
 #contact-form {
-	width: 454px;
-	height: 720px;
 	margin-left: 68px;
 }
 
@@ -738,6 +745,10 @@ td {
         text-align: center;
         align-self: stretch;
     }
+	
+	#contact-form h2 {
+		font-size: 30px;
+	}
 }
 
 /* Thank You Page - Content Styling
