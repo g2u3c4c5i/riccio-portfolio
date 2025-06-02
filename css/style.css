@@ -8,12 +8,12 @@
 }
 
 h1 {
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	font-size: 20px;
 }
 
 h2 {
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	font-size: 20px;
 	color: #FFF;
 	text-transform: uppercase;
@@ -22,14 +22,14 @@ h2 {
 }
 
 h3 {
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	font-size: 20px;
 	color: #FFF;
 	font-weight: 300;
 }
 
 p {
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	font-size: 20px;
 	line-height: 16px;
 }
@@ -75,7 +75,7 @@ nav ul li {
 	display: inline-block;
 	float: right;
 	padding: 22px 20px 22px 20px;
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -560,7 +560,7 @@ table {
 
 th, td {
 	border: 3px solid #223054;
-	font-family: Sukhumvit Set, san-serif;
+	font-family: Sukhumvit Set, sans-serif;
 	color: #223054;
 }
 
@@ -710,7 +710,7 @@ td {
     text-align: left;
     font-weight: bold;
 	color: #223054;
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	font-size: 20px;
 	line-height: 16px;
 }
@@ -734,7 +734,7 @@ td {
     cursor: pointer;
     font-size: 1rem;
     align-self: flex-start;
-	font-family: Sukhumvit Set, DejaVu Sans, san-serif;
+	font-family: Sukhumvit Set, DejaVu Sans, sans-serif;
 	line-height: 16px;
 }
 
