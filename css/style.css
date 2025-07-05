@@ -540,7 +540,7 @@ footer p {
 	font-size: 16px;
 }
 
-#skills-div {
+#skills-div, #education-div, #awards-div{
 	width: auto;
 	margin: 0px 10%;
 }
@@ -548,6 +548,27 @@ footer p {
 #skills-list {
 	width: auto;
 	padding: 24px 0px 48px 0px;
+}
+
+.education-header, .education-italics, .education-text {
+	width: auto;
+	line-height: 36px;
+	color: #223054;
+	letter-spacing: 1px;
+}
+
+.education-header {
+	padding-top: 24px;
+	font-weight: 800 !important;
+}
+
+.education-italics {
+	font-style: italic;
+	font-size: 16px !important;
+}
+
+.education-text {
+	font-size: 16px !important;
 }
 
 table {
